@@ -1,26 +1,28 @@
+import './reset.css';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Layout from './components/Layout/Layout';
+import Gallery from './components/Gallery/Gallery';
+import GalleryItemDetails from './components/GalleryItemDetails/GalleryItemDetails';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import { AnimatePresence, LayoutGroup } from 'framer-motion';
+import Welcome from './components/Welcome/Welcome';
+import Nav from './components/Nav/Nav';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const location = useLocation();
+    return (
+        <Layout>
+            <Nav/>
+            <AnimatePresence mode={'wait'}>
+                <Routes location={location} key={location.pathname}>
+                    <Route index element={<Gallery/>}/>
+                    <Route path="/welcome" element={<Welcome/>}/>
+                    <Route path="/:id" element={<GalleryItemDetails/>}/>
+                </Routes>
+            </AnimatePresence>
+        </Layout>
+    );
+
 }
 
 export default App;

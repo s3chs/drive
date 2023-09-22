@@ -1,0 +1,368 @@
+.gallery-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(96, 1fr);
+  gap: 20px;
+  width: 100%;
+  height: 1350vh;
+
+  @media screen and (max-width: 768px) {
+    height: 800vh;
+    gap: 10px;
+  }
+
+  .text-container {
+    span {
+      overflow: hidden;
+      display: inline-block;
+      font-family: "PP Supply Mono", sans-serif;
+      font-size: 1.1em;
+
+      span {
+        display: inline-block;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 0.95em;
+      }
+    }
+
+    &.title {
+      grid-area: 3 / 2 / 4 / 6;
+    }
+
+    &.fancy, &.fancy-two, &.fancy-three, &.fancy-turbo, &.fancy-turbo-two {
+      span {
+        text-transform: uppercase;
+        font-size: 1.7em;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &.fancy {
+      grid-area: 9 / 6 / 10 / 8;
+    }
+
+    &.fancy-turbo {
+      grid-area: 29 / 3 / 30 / 4;
+    }
+
+    &.fancy-turbo-two {
+      grid-area: 31 / 10 / 32 / 11;
+    }
+
+    &.fancy-two {
+      grid-area: 46 / 10 / 50 / 12;
+    }
+
+    &.fancy-three {
+      grid-area: 96 / 10 / 97 / 12;
+    }
+  }
+
+  .image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      transition: 0.6s scale cubic-bezier(0.43, 0.13, 0.23, 0.96);
+      object-fit: cover;
+    }
+
+    &:hover {
+      img {
+        scale: 1.05;
+      }
+    }
+
+    &.one {
+      grid-area: 2 / 8 / 9 / 12;
+
+      @media screen and (max-width: 768px) {
+        grid-area: 3 / 6 / 7 / 12;
+      }
+    }
+
+
+    &.two {
+      grid-area: 4 / 2 / 11 / 6;
+
+      @media screen and (max-width: 768px) {
+        grid-area: 4 / 2 / 10 / 6;
+      }
+    }
+
+    &.three {
+      grid-area: 9 / 8 / 14 / 12;
+
+      @media screen and (max-width: 768px) {
+        grid-area: 7 / 6 / 10 / 12;
+      }
+    }
+
+    &.four {
+      grid-area: 11 / 2 / 17 / 7;
+
+      @media screen and (max-width: 768px) {
+        grid-area: 10 / 2 / 17 / 7;
+      }
+    }
+
+    &.five {
+      grid-area: 14 / 7 / 20 / 12;
+
+      @media screen and (max-width: 768px) {
+        grid-area: 11 / 7 / 20 / 12;
+      }
+    }
+
+    &.six {
+      grid-area: 18 / 2 / 23 / 7;
+    }
+
+    &.seven {
+      grid-area: 20 / 7 / 24 / 12;
+    }
+
+    &.eight {
+      grid-area: 24 / 2 / 28 / 8;
+    }
+
+    &.nine {
+      grid-area: 24 / 8 / 28 / 12;
+    }
+
+    &.ten {
+      grid-area: 28 / 5 / 34 / 9;
+
+      @media screen and (max-width: 768px) {
+        grid-area: 28 / 2 / 34 / 12;
+      }
+    }
+
+    &.eleven {
+      grid-area: 34 / 2 / 39 / 5;
+    }
+
+    &.twelve {
+      grid-area: 34 / 5 / 39 / 12;
+    }
+
+    &.thirteen {
+      grid-area: 39 / 3 / 42 / 7;
+
+      @media screen and (max-width: 768px) {
+        grid-area: 39 / 2 / 42 / 7;
+      }
+    }
+
+    &.fourteen {
+      grid-area: 39 / 7 / 46 / 12;
+    }
+
+    &.fifteen {
+      grid-area: 42 / 4 / 45 / 7;
+
+      @media screen and (max-width: 768px) {
+        grid-area: 42 / 2 / 45 / 7;
+      }
+    }
+
+    &.sixteen {
+      grid-area: 46 / 2 / 51 / 8;
+    }
+
+    &.seventeen {
+      grid-area: 49 / 8 / 55 / 12;
+
+      @media screen and (max-width: 768px) {
+        grid-area: 49 / 8 / 53 / 12;
+      }
+    }
+
+    &.eighteen {
+      grid-area: 51 / 2 / 55 / 8;
+    }
+
+    &.nineteen {
+      grid-area: 56 / 3 / 62 / 7;
+
+      @media screen and (max-width: 768px) {
+        grid-area: 56 / 2 / 62 / 7;
+      }
+    }
+
+    &.twenty {
+      grid-area: 57 / 7 / 63 / 11;
+
+      @media screen and (max-width: 768px) {
+        grid-area: 57 / 7 / 63 / 12;
+      }
+    }
+
+    &.twenty-one {
+      grid-area: 63 / 8 / 67 / 11;
+
+      @media screen and (max-width: 768px) {
+        grid-area: 63 / 9 / 68 / 12;
+      }
+    }
+
+    &.twenty-two {
+      grid-area: 64 / 5 / 68 / 8;
+
+      img {
+        filter: grayscale(100%);
+      }
+
+      @media screen and (max-width: 768px) {
+        grid-area: 64 / 5 / 68 / 9;
+      }
+    }
+
+    &.twenty-three {
+      grid-area: 65 / 2 / 69 / 5;
+    }
+
+    &.twenty-four {
+      grid-area: 68 / 5 / 73 / 12;
+
+      img {
+        filter: grayscale(100%);
+      }
+    }
+
+    &.twenty-five {
+      grid-area: 72 / 2 / 76 / 5;
+
+      img {
+        filter: grayscale(100%);
+      }
+    }
+
+    &.twenty-six {
+      grid-area: 73 / 5 / 77 / 8;
+
+      img {
+        filter: grayscale(100%);
+      }
+
+      @media screen and (max-width: 768px) {
+        grid-area: 73 / 5 / 77 / 9;
+      }
+    }
+
+    &.twenty-seven {
+      grid-area: 74 / 8 / 78 / 11;
+
+      img {
+        filter: grayscale(100%);
+      }
+
+      @media screen and (max-width: 768px) {
+        grid-area: 74 / 9 / 78 / 12;
+      }
+    }
+
+    &.twenty-eight {
+      grid-area: 77 / 2 / 84 / 8;
+
+      img {
+        filter: grayscale(100%);
+      }
+    }
+
+    &.twenty-nine {
+      grid-area: 78 / 8 / 83 / 12;
+
+      img {
+        filter: grayscale(100%);
+      }
+    }
+
+    &.thirty {
+      grid-area: 84 / 6 / 89 / 12;
+
+      img {
+        filter: grayscale(100%);
+      }
+    }
+
+    &.thirty-one {
+      grid-area: 84 / 3 / 89 / 6;
+
+      img {
+        filter: grayscale(100%);
+      }
+    }
+
+    &.thirty-two {
+      grid-area: 89 / 2 / 94 / 5;
+
+      img {
+        filter: grayscale(100%);
+      }
+    }
+
+    &.thirty-three {
+      grid-area: 89 / 5 / 94 / 9;
+
+      img {
+        filter: grayscale(100%);
+      }
+    }
+
+    &.thirty-four {
+      grid-area: 89 / 9 / 94 / 12;
+
+      img {
+        filter: grayscale(100%);
+      }
+    }
+
+    &.thirty-five {
+      grid-area: 94 / 3 / 97 / 9;
+
+      img {
+        filter: grayscale(100%);
+      }
+
+      @media screen and (max-width: 768px) {
+        grid-area: 94 / 4 / 97 / 10;
+      }
+    }
+  }
+}
+
+.project-details-container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-family: "PP Supply Mono", sans-serif;
+    line-height: 50px;
+    font-size: 1.8em;
+    width: 50vw;
+    text-align: justify;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.2em;
+      width: 70vw;
+      line-height: 25px;
+    }
+  }
+}

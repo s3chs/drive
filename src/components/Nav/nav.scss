@@ -1,8 +1,22 @@
 .nav-container {
-    position: fixed;
-    mix-blend-mode: difference;
+  position: fixed;
+  top: 0;
+  left: 30px;
+  width: 100%;
+  height: fit-content;
+  z-index: 30;
+  mix-blend-mode: difference;
+  overflow: hidden;
 
-    .nav-text {
+  .nav-text {
+    display: inline-block;
+    font-family: "PP Mori", sans-serif;
+    font-size: 6em;
+    text-transform: uppercase;
+    color: white;
 
+    @media screen and (max-width: 768px) {
+      font-size: 4em;
     }
+  }
 }

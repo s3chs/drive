@@ -1,0 +1,23 @@
+
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+.has-scroll-smooth body {
+  overflow: hidden;
+}
+
+.has-scroll-smooth [data-scroll-container] {
+  min-height: 100vh;
+}
+
+[data-scroll-container] {
+  height: auto;
+}
+
+.layout-container {
+  background-color: #F6F4F3;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
