@@ -9,6 +9,7 @@ export default function ScrollIndicator() {
             className="scroll-indicator-container"
             initial={{opacity: 0}}
             animate={{opacity: 1}}
+            exit={{opacity: 0}}
             transition={transition}
         >
             <span className="scroll-indicator">scroll</span>
