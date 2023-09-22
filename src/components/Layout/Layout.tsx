@@ -1,5 +1,4 @@
 import './layout.scss';
-import '../../font/typography.scss';
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
 import { ReactNode, useRef } from 'react';
 

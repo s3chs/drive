@@ -1,10 +1,13 @@
 import './reset.css';
+import './fonts/typography.css';
+import './fonts/PPNeueMontreal-Regular.ttf';
+import './fonts/PPSupplyMono-Regular.ttf';
 import React from 'react';
 import Layout from './components/Layout/Layout';
 import Gallery from './components/Gallery/Gallery';
 import GalleryItemDetails from './components/GalleryItemDetails/GalleryItemDetails';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import { AnimatePresence, LayoutGroup } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import Welcome from './components/Welcome/Welcome';
 import Nav from './components/Nav/Nav';
 
