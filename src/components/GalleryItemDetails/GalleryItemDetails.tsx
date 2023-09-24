@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import './gallery-item-details.scss';
 import { transition } from '../Gallery/Gallery';
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';

@@ -1,8 +1,5 @@
-import './reset.css';
-import './fonts/typography.css';
-import './fonts/PPNeueMontreal-Regular.ttf';
-import './fonts/PPSupplyMono-Regular.ttf';
 import React from 'react';
+import './main.sass';
 import Layout from './components/Layout/Layout';
 import Gallery from './components/Gallery/Gallery';
 import GalleryItemDetails from './components/GalleryItemDetails/GalleryItemDetails';

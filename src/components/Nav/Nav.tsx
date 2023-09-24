@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import './nav.scss';
 import { transition } from '../Gallery/Gallery';
 
 export default function Nav() {

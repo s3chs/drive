@@ -1,4 +1,3 @@
-import './layout.scss';
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
 import { ReactNode, useRef } from 'react';
 

@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import './gallery.scss';
 import { Link } from 'react-router-dom';
 import { data } from '../../data';
 import ScrollIndicator from '../ScrollIndicator/ScrollIndicator';

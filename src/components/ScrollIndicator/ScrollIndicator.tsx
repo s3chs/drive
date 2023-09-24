@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import './scroll-indicator.scss';
 import { transition } from '../Gallery/Gallery';
 
 export default function ScrollIndicator() {

@@ -16,7 +16,8 @@
     span {
       overflow: hidden;
       display: inline-block;
-      font-family: "PP Supply Mono", sans-serif;
+      //font-family: "PP Supply Mono", sans-serif;
+      font-family: 'Space Mono', monospace;
       font-size: 1.1em;
 
       span {
@@ -351,7 +352,8 @@
   justify-content: center;
 
   p {
-    font-family: "PP Supply Mono", sans-serif;
+    //font-family: "PP Supply Mono", sans-serif;
+    font-family: 'Space Mono', monospace;
     line-height: 50px;
     font-size: 1.8em;
     width: 50vw;

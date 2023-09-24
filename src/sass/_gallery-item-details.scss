@@ -6,6 +6,9 @@
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 
   .back-btn-container {
     position: absolute;
@@ -13,6 +16,9 @@
     right: 40px;
     z-index: 40;
 
+    @media screen and (max-width: 768px) {
+      top: 100px;
+    }
 
     a {
       font-family: "PP Supply Mono", sans-serif;
@@ -27,13 +33,16 @@
         color: #F6F4F3;
       }
     }
-
   }
 
   .car-img {
     max-height: 90vh;
     max-width: 50vw;
     filter: grayscale(100%);
+
+    @media screen and (max-width: 768px) {
+      max-width: 80vw;
+    }
   }
 
   .car-brand {
@@ -41,10 +50,15 @@
     margin-top: 20vh;
     margin-left: 2vw;
 
+
+    @media screen and (max-width: 768px) {
+      margin: 20px 0;
+    }
+
     span {
       display: inline-block;
       position: relative;
-      font-family: "Neue Montreal", sans-serif;
+      font-family: "Helvetica Neue", sans-serif;
       font-size: 1.2em;
       text-transform: uppercase;
       letter-spacing: 1px;
